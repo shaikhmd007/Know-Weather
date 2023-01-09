@@ -10,7 +10,7 @@ const CheckWeather = () => {
   useEffect(() => {
     if (search) {
       // try {
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=d50b62d44387a21d0a46c8f4be982d54`).then(res => {
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid={YOUR_API_ID}`).then(res => {
         // console.log(res.status);
         if (res.status === 200) {
           return res.json()
